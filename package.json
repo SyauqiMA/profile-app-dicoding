@@ -1,0 +1,24 @@
+{
+	"name": "profile-app-dicoding",
+	"version": "1.0.0",
+	"description": "A Profile page served with HapiJS",
+	"main": "server.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"start": "node server.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/SyauqiMA/profile-app-dicoding.git"
+	},
+	"author": "Syauqi",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/SyauqiMA/profile-app-dicoding/issues"
+	},
+	"homepage": "https://github.com/SyauqiMA/profile-app-dicoding#readme",
+	"dependencies": {
+		"@hapi/hapi": "^21.3.2",
+		"@hapi/inert": "^7.1.0"
+	}
+}
