@@ -1,0 +1,96 @@
+* {
+	box-sizing: border-box;
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	background-color: hsl(0, 0%, 9%);
+}
+.content {
+	width: 80%;
+	margin: 40px auto;
+}
+
+.hero {
+	text-align: center;
+	width: 70%;
+	margin: 0 auto;
+}
+
+.hero p {
+	color: white;
+}
+
+.hero h1 {
+	color: hsl(26, 81%, 50%);
+	font-size: 50px;
+	margin-top: 30px;
+	margin-bottom: 20px;
+	letter-spacing: -1px;
+}
+
+img.profile-pic {
+	/* border: 1px solid #fff; */
+	/* display: inline-block; */
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	/* clip-path: circle(60%); */
+	margin-bottom: 20px;
+	object-fit: contain;
+	box-shadow: 0 0 0 3px hsl(26, 81%, 50%);
+}
+
+p.name {
+	font-size: 1.1em;
+	font-weight: bold;
+}
+
+div.description-container {
+	/* margin-top: 70px; */
+	text-align: center;
+	width: 70%;
+	margin: 35px auto 0;
+}
+
+div.description-container p {
+	line-height: 1.5em;
+	/* display: inline-block; */
+	color: hsl(0, 0%, 90%);
+	width: 80%;
+	margin: 0 auto;
+}
+.cards {
+	display: flex;
+	flex-direction: row;
+	margin-top: 70px;
+	justify-content: space-around;
+}
+
+.card {
+	border: 1px solid #fff;
+	width: 250px;
+	padding: 30px 15px;
+	background-color: white;
+	border-radius: 15px;
+	box-shadow: 0 8px 0 0 hsl(26, 81%, 50%);
+}
+
+.logo {
+	width: 60px;
+	margin-bottom: 12px;
+}
+
+.card-title {
+	font-weight: bold;
+	margin-bottom: 12px;
+	font-size: 1.1em;
+	width: 80%;
+}
+
+.card-link {
+	font-size: 0.8em;
+	color: hsl(0, 0%, 9%);
+	letter-spacing: 1px;
+}
