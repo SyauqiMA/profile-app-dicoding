@@ -1,2 +1,2 @@
 runtime: nodejs18
-services: profile-app
+service: profile-app
