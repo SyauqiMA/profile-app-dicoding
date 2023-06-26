@@ -1,8 +1,9 @@
 const Hapi = require('@hapi/hapi');
+const Path = require('path');
 
 const init = async () => {
 	const server = Hapi.server({
-		port: 3000,
+		port: process.env.PORT || 8080,
 		host: 'localhost',
 	});
 
@@ -12,10 +13,13 @@ const init = async () => {
 	// route
 	server.route({
 		method: 'GET',
-		path: '/',
-		handler: function (request, h) {
-			// return file
-			return h.file('./static/index.html');
+		path: '/{param*}',
+		handler: {
+			// this route will serve the 'static' directory
+			directory: {
+				path: Path.join(__dirname, 'static'),
+				index: ['index.html'],
+			},
 		},
 	});
 	await server.start();
